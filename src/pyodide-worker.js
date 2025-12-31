@@ -42,22 +42,38 @@ function updateStatus(statusElement, message) {
  * @param {HTMLElement} statusElement - Status display element
  */
 async function loadFonts(pyodideInstance, statusElement) {
+  const errors = [];
+
   for (const font of FONTS) {
     // Get the Vite-resolved URL for this font
     const fontPath = FONT_URLS[font.value];
+
+    if (!fontPath) {
+      console.error(`Font URL not found for: ${font.value}`);
+      errors.push(`${font.value}: URL not resolved by Vite`);
+      continue;
+    }
+
     updateStatus(statusElement, `Mounting ${font.label}...`);
 
     try {
+      console.log(`Loading font from: ${fontPath}`);
       const fontResponse = await fetch(fontPath);
       if (!fontResponse.ok) {
-        throw new Error(`Failed to fetch ${font.value}: ${fontResponse.status}`);
+        throw new Error(`HTTP ${fontResponse.status}`);
       }
       const fontBuffer = await fontResponse.arrayBuffer();
       pyodideInstance.FS.writeFile(font.value, new Uint8Array(fontBuffer));
+      console.log(`✓ Loaded ${font.value}`);
     } catch (error) {
-      console.error(`Error loading font ${font.value}:`, error);
-      throw error;
+      console.error(`✗ Error loading font ${font.value}:`, error);
+      errors.push(`${font.value}: ${error.message}`);
     }
+  }
+
+  if (errors.length > 0) {
+    console.warn(`Failed to load ${errors.length} fonts:`, errors);
+    // Don't throw - allow app to continue with available fonts
   }
 }
 
