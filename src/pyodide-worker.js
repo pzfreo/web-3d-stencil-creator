@@ -7,12 +7,12 @@
 
 import { PYODIDE_CONFIG, FONTS } from './constants.js';
 
-// Import fonts as Vite assets
-import allertaFont from '../public/fonts/AllertaStencil-Regular.ttf?url';
-import sirinFont from '../public/fonts/SirinStencil-Regular.ttf?url';
-import bigShouldersFont from '../public/fonts/BigShouldersStencil-Regular.ttf?url';
-import emblemaFont from '../public/fonts/EmblemaOne-Regular.ttf?url';
-import stardosFont from '../public/fonts/StardosStencil-Regular.ttf?url';
+// Import fonts as Vite assets (from src/assets, not public)
+import allertaFont from './assets/AllertaStencil-Regular.ttf?url';
+import sirinFont from './assets/SirinStencil-Regular.ttf?url';
+import bigShouldersFont from './assets/BigShouldersStencil-Regular.ttf?url';
+import emblemaFont from './assets/EmblemaOne-Regular.ttf?url';
+import stardosFont from './assets/StardosStencil-Regular.ttf?url';
 
 // Map font filenames to their imported URLs
 const FONT_URLS = {
