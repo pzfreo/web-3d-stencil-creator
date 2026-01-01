@@ -13,7 +13,6 @@ import sirinFont from './assets/SirinStencil-Regular.ttf?url';
 import bigShouldersFont from './assets/BigShouldersStencil-Regular.ttf?url';
 import emblemaFont from './assets/EmblemaOne-Regular.ttf?url';
 import stardosFont from './assets/StardosStencil-Regular.ttf?url';
-import marshFont from './assets/MarshStencil-Regular.ttf?url';
 import blackOpsFont from './assets/BlackOpsOne-Regular.ttf?url';
 
 // Map font filenames to their imported URLs
@@ -23,7 +22,6 @@ const FONT_URLS = {
   'BigShouldersStencil-Regular.ttf': bigShouldersFont,
   'EmblemaOne-Regular.ttf': emblemaFont,
   'StardosStencil-Regular.ttf': stardosFont,
-  'MarshStencil-Regular.ttf': marshFont,
   'BlackOpsOne-Regular.ttf': blackOpsFont,
 };
 

@@ -8,7 +8,6 @@ export const FONTS = [
   { value: 'BigShouldersStencil-Regular.ttf', label: 'Big Shoulders' },
   { value: 'EmblemaOne-Regular.ttf', label: 'Emblema One' },
   { value: 'StardosStencil-Regular.ttf', label: 'Stardos Stencil' },
-  { value: 'MarshStencil-Regular.ttf', label: 'Marsh Stencil' },
   { value: 'BlackOpsOne-Regular.ttf', label: 'Black Ops One' },
 ];
 
