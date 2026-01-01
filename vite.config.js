@@ -15,7 +15,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/*.png'],
       manifest: {
-        name: '3D Stencil Creator',
+        name: 'Stencillator',
         short_name: 'Stencillator',
         description: 'Generate SVG stencils for 3D printing with ease',
         theme_color: '#0f172a',

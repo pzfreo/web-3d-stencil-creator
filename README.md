@@ -1,4 +1,4 @@
-# Stencillator - 3D Stencil Creator
+# Stencillator
 
 Generate SVG stencils for 3D printing with ease. Create custom text stencils with various fonts, sizes, and alignments - perfect for use in slicers like Bambu Studio, PrusaSlicer, and Cura.
 
