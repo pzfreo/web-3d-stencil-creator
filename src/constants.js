@@ -9,6 +9,7 @@ export const FONTS = [
   { value: 'EmblemaOne-Regular.ttf', label: 'Emblema One' },
   { value: 'StardosStencil-Regular.ttf', label: 'Stardos Stencil' },
   { value: 'BlackOpsOne-Regular.ttf', label: 'Black Ops One' },
+  { value: 'Marsh-Regular.otf', label: 'Marsh Stencil' },
 ];
 
 export const PYODIDE_CONFIG = {

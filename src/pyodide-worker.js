@@ -14,6 +14,7 @@ import bigShouldersFont from './assets/BigShouldersStencil-Regular.ttf?url';
 import emblemaFont from './assets/EmblemaOne-Regular.ttf?url';
 import stardosFont from './assets/StardosStencil-Regular.ttf?url';
 import blackOpsFont from './assets/BlackOpsOne-Regular.ttf?url';
+import marshFont from './assets/Marsh-Regular.otf?url';
 
 // Map font filenames to their imported URLs
 const FONT_URLS = {
@@ -23,6 +24,7 @@ const FONT_URLS = {
   'EmblemaOne-Regular.ttf': emblemaFont,
   'StardosStencil-Regular.ttf': stardosFont,
   'BlackOpsOne-Regular.ttf': blackOpsFont,
+  'Marsh-Regular.otf': marshFont,
 };
 
 let pyodide = null;
